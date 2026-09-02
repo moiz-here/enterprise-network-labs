@@ -51,9 +51,6 @@ Estimated setup time: **15–20 minutes**
 ---
 
 ## Network topology
-... 
-
-## Network topology
 
 ### Multi-site enterprise architecture
 
