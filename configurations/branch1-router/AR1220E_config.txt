@@ -1,0 +1,27 @@
+#
+# Huawei AR1220E — Branch 1 Router
+# Lab: Multi-site enterprise OSPF (eNSP)
+#
+
+sysname Branch1-AR1220E
+
+interface GigabitEthernet0/0/0
+ description BRANCH1-LAN
+ ip address 192.168.1.1 255.255.255.0
+ undo shutdown
+
+interface GigabitEthernet0/0/1
+ description UPLINK-TO-HQ
+ ip address 10.0.1.1 255.255.255.0
+ undo shutdown
+
+interface LoopBack0
+ ip address 1.1.1.2 255.255.255.255
+
+ospf 1 router-id 1.1.1.2
+ area 0.0.0.0
+  network 192.168.1.0 0.0.0.255
+  network 10.0.1.0 0.0.0.255
+  network 1.1.1.2 0.0.0.0
+
+return

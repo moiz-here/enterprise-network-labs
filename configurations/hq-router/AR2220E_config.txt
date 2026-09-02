@@ -1,0 +1,42 @@
+#
+# Huawei AR2220E — HQ Router
+# Lab: Multi-site enterprise OSPF (eNSP)
+# Author: Muhammad Moiz Iftikhar
+#
+# NOTE: Interface names may differ slightly by eNSP device image.
+#       Align IPs with topologies/multi-site-enterprise/addressing-plan.md
+#
+
+sysname HQ-AR2220E
+
+#
+# Interface addressing
+#
+interface GigabitEthernet0/0/0
+ description HQ-LAN
+ ip address 192.168.0.1 255.255.255.0
+ undo shutdown
+
+interface GigabitEthernet0/0/1
+ description LINK-TO-BRANCHES
+ ip address 10.0.0.1 255.255.255.0
+ undo shutdown
+
+interface LoopBack0
+ ip address 1.1.1.1 255.255.255.255
+
+#
+# OSPF — single area 0
+#
+ospf 1 router-id 1.1.1.1
+ area 0.0.0.0
+  network 192.168.0.0 0.0.0.255
+  network 10.0.0.0 0.0.0.255
+  network 1.1.1.1 0.0.0.0
+
+#
+# Optional: enable OSPF on interfaces explicitly (VRP style variants)
+# ospf enable 1 area 0.0.0.0   (under interface, if required by image)
+#
+
+return

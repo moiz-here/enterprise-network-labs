@@ -1,0 +1,21 @@
+#
+# Huawei S3700 — HQ Switch (basic access)
+#
+
+sysname HQ-S3700
+
+vlan batch 1
+
+interface GigabitEthernet0/0/1
+ description TO-HQ-ROUTER
+ port link-type access
+ port default vlan 1
+ undo shutdown
+
+interface GigabitEthernet0/0/2
+ description HQ-PC
+ port link-type access
+ port default vlan 1
+ undo shutdown
+
+return
