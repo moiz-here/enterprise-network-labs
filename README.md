@@ -223,4 +223,4 @@ MIT — see [LICENSE](LICENSE)
 
 ## Note
 
-Educational lab work. All configurations were tested in **Huawei eNSP**. Replace placeholder screenshots in `assets/screenshots/` with your own eNSP captures for full visual proof.
+Educational lab work. All configurations were tested in **Huawei eNSP**. 
