@@ -35,11 +35,6 @@ Complete enterprise network labs on Huawei eNSP with AR-series routers and S3700
 - Archived full device configurations for reproducibility
 
 ---
-## Overview
-...
-
-### Key outcomes
-...
 
 ---
 
