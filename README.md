@@ -35,6 +35,28 @@ Complete enterprise network labs on Huawei eNSP with AR-series routers and S3700
 - Archived full device configurations for reproducibility
 
 ---
+## Overview
+...
+
+### Key outcomes
+...
+
+---
+
+## Quick start 
+
+1. **Open Huawei eNSP**
+2. **Import topology** from [`topologies/multi-site-enterprise/`](topologies/multi-site-enterprise/)
+3. **Load configurations** from [`configurations/`](configurations/) folder onto respective devices
+4. **Start all devices** and verify OSPF neighbors form correctly
+5. **Run verification commands** from [`verification/`](verification/) folder
+
+Estimated setup time: **15–20 minutes**
+
+---
+
+## Network topology
+... 
 
 ## Network topology
 
