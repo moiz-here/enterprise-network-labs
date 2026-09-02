@@ -210,7 +210,7 @@ enterprise-network-labs/
 ## Author
 
 **Muhammad Moiz Iftikhar**  
-BS Cybersecurity Student | UET Taxila, Pakistan  
+BS Cybersecurity Student  
 GitHub: [github.com/moiz-here](https://github.com/moiz-here)
 
 Related portfolio: [cybersecurity-portfolio](https://github.com/moiz-here/cybersecurity-portfolio)
